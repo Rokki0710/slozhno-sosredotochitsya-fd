@@ -12,5 +12,25 @@
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  --text-color: #353430;
+  --title-color: #ffc2e6;
+  --main-color: #ff8dcb;
+  --button-color: #353430;
+  --bg-color: transparent;
+  --bg-image: url(../images/cover-image-light.png);
+  --display-rec: none;
+  --subtitle-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #353430;
+    --title-color: #ffc2e6;
+    --main-color: #ff8dcb;
+    --button-color: #353430;
+    --bg-color: transparent;
+    --bg-image: url(../images/cover-image-light.png);
+    --display-rec: none;
+    --subtitle-color: #353430;
+  }
 }
