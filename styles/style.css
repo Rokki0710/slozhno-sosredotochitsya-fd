@@ -161,12 +161,6 @@ html {
   margin-top: 1.5px;
 }
 
-.content-title-text {
-  color: var(--button-color);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--main-text-size);
-}
-
 .theme-light .content-title-text {
   color: var(--text-color);
 }
