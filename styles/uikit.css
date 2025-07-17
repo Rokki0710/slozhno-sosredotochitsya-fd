@@ -22,6 +22,7 @@
   color: var(--button-color, #ff0070);
   text-transform: lowercase;
   background: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -29,7 +30,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(from var(--button-color, #ff0070) r g b / 50%);
+  border: 1px solid rgba(from var(--button-color, #ff0070) r g b / 40%);
 }
 
 .header__theme-menu-button:focus {

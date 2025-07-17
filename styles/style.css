@@ -105,19 +105,33 @@ html {
   margin: 0 var(--main-indent, 20px);
 }
 
-.about {
+.content-section {
   display: grid;
+  gap: var(--main-indent, 20px);
+  margin-block-end: 80px;
+}
+
+.about {
   grid-template-columns: 1fr 2.06fr;
   grid-template-rows: repeat(3, auto);
   margin-block-end: 60px;
-  gap: var(--main-indent, 20px);
+  gap: 20px;
 }
 
 .problems {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: fit-content 1fr;
-  gap: 20px;
+}
+
+.tips {
+  grid-template-columns: 1fr 2.06fr;
+  grid-template-rows: 1em repeat(3, auto);
+}
+
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-indent, 20px);
   margin-block-end: 80px;
 }
 
@@ -139,14 +153,6 @@ html {
   font-weight: var(--font-weight-bold);
   font-size: var(--main-text-size);
   color: var(--button-color);
-}
-
-.tips {
-  display: grid;
-  grid-template-columns: 1fr 2.06fr;
-  grid-template-rows: 1em repeat(3, auto);
-  margin-block-end: 80px;
-  gap: var(--main-indent, 20px);
 }
 
 .tips .content-title-text {
@@ -178,14 +184,10 @@ html {
   font-size: var(--main-text-size);
 }
 
-.gallery-section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--main-indent, 20px);
-}
 .gallery-title {
   font-size: var(--main-text-size);
 }
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -231,6 +233,7 @@ html {
 
 .footer {
   position: relative;
+  min-height: 668px;
   display: grid;
   align-content: center;
   height: 100vh;
