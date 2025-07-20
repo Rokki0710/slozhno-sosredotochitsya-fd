@@ -38,8 +38,8 @@
 }
 
 .decorated-zone::before {
-  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem); /*отступ 10px стал 20px*/
-  right: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem); /*отступ 10px стал 20px*/
+  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  right: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   border-top: 1px solid var(--decorated-element-color);
   border-right: 1px solid var(--decorated-element-color);
 }
@@ -50,15 +50,15 @@
     2.545vw + 0.029rem,
     1.25rem
   );
-  left: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem); /*отступ 10px стал 20px*/
+  left: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   border-bottom: 1px solid var(--decorated-element-color);
   border-left: 1px solid var(--decorated-element-color);
 }
 
 .rec {
   position: absolute;
-  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem); /*отступ 10px стал 20px*/
-  right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem); /*отступ 19 стал 29px*/
+  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem);
   color: var(--decorated-element-color);
   line-height: 25px;
   text-transform: uppercase;
@@ -153,12 +153,12 @@
     0.625rem,
     2.545vw + 0.029rem,
     1.25rem
-  ); /*отступ был 10 стал 20*/
+  );
   padding-left: clamp(
     0.625rem,
     2.545vw + 0.029rem,
     1.25rem
-  ); /*отступ был 10 стал 20*/
+  );
 }
 
 .main-content {
@@ -166,7 +166,7 @@
     2.5rem,
     5.089vw + 1.307rem,
     3.75rem
-  ); /* отступ был 40 стал 60*/
+  );
 }
 
 .section {
@@ -174,7 +174,7 @@
     3.125rem,
     7.634vw + 1.336rem,
     5rem
-  ); /*нижний отступ 50 стал 80*/
+  );
 }
 
 .section:last-of-type {
@@ -182,7 +182,7 @@
     2.5rem,
     5.089vw + 1.307rem,
     3.75rem
-  ); /*отступ меняется 40 -> 60*/
+  );
 }
 
 .section__title {
@@ -244,12 +244,12 @@
     0.625rem,
     2.545vw + 0.029rem,
     1.25rem
-  );/*отступ меняется 10 -> 20 */
+  );
   padding-top: clamp(
     0.625rem,
     2.545vw + 0.029rem,
     1.25rem
-  ); /*отступ меняется 10 -> 20 */
+  );
 }
 
 .focus-pictures_image {
