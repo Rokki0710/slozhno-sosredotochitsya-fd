@@ -25,7 +25,7 @@
 .decorated-zone {
   position: relative;
   height: 100vh;
-  min-height: clamp(41.75rem, 90.585vw + 20.519rem, 64rem);
+  min-height: clamp(668px, 90.585vw + 20.519rem, 64rem);
 }
 
 .decorated-zone::after,
@@ -356,6 +356,10 @@
 }
 
 @media (width >= 1024px) {
+  .decorated-zone { 
+    min-height: 768px; 
+  }
+  
   .header__theme-menu {
     justify-self: center;
     padding-top: 18px;
