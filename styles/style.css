@@ -24,7 +24,7 @@
 
 .decorated-zone {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   min-height: clamp(668px, 90.585vw + 20.519rem, 64rem);
 }
 
