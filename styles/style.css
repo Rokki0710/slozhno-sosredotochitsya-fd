@@ -24,8 +24,8 @@
 
 .decorated-zone {
   position: relative;
-  height: 1vh;
-  min-height: clamp(41.75rem, 90.585vw + 20.519rem, 64rem);
+  height: 100vh;
+  min-height: clamp(668px, 90.585vw + 20.519rem, 64rem);
 }
 
 .decorated-zone::after,
@@ -212,7 +212,7 @@
 }
 
 .card__paragraph:not(:last-of-type) {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .card-list {
@@ -356,10 +356,6 @@
 }
 
 @media (width >= 1024px) {
-  .decorated-zone {
-    min-height: 768px;
-  }
-
   .header__theme-menu {
     justify-self: center;
     padding-top: 18px;
