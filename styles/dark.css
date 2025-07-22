@@ -2,6 +2,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --fonts: "IBM Plex Mono";
   --bg-color: #000028;
+  --bg-fallback: #000028;
   --title-color: #db00ff;
   --main-color: #ff0070;
   --subtitle-color: #000028;
@@ -12,6 +13,6 @@
   --paragraph-title-color: #ff0070;
 }
 
-:root.theme-dark .header__decorated-element {
+:root.theme-dark .header__decorated-element { 
   display: block;
 }

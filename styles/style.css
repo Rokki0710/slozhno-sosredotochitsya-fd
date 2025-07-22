@@ -2,7 +2,7 @@
 .page {
   width: 100%;
   margin: 0 auto;
-  background-color: var(--bg-color);
+  background-color: var(--bg-fallback, var(--bg-color));
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -20,6 +20,14 @@
     1.25rem
   );
   padding-left: 10px;
+}
+
+.title-decor,
+.card__title,
+.card__paragraph {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .decorated-zone {
@@ -57,14 +65,14 @@
 
 .rec {
   position: absolute;
-  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
-  right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem);
+  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem); /*отступ 10px стал 20px*/
+  right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem); /*отступ 19 стал 29px*/
   color: var(--decorated-element-color);
   line-height: 25px;
   text-transform: uppercase;
 }
 
-.header__decorated-element::after {
+.rec::after {
   content: "";
   position: relative;
   bottom: 2px;
@@ -91,6 +99,7 @@
 
 .header__theme-menu-button {
   min-width: 70px;
+  white-space: nowrap;
   border: none;
   padding: 4px 13px;
   color: var(--button-color);
@@ -256,6 +265,9 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .footer {
@@ -265,6 +277,7 @@
 
 .footer__title {
   margin: 0 auto;
+  text-shadow: 2px 2px 0 var(--main-color);
 }
 
 @media (width >= 768px) {
@@ -356,10 +369,6 @@
 }
 
 @media (width >= 1024px) {
-  .decorated-zone { 
-    min-height: 768px; 
-  }
-  
   .header__theme-menu {
     justify-self: center;
     padding-top: 18px;
