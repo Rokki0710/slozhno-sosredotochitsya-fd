@@ -13,6 +13,6 @@
   --paragraph-title-color: #ff0070;
 }
 
-:root.theme-dark .header__decorated-element { 
+:root.theme-dark .header__decorated-element {
   display: block;
 }
