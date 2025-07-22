@@ -369,6 +369,10 @@
 }
 
 @media (width >= 1024px) {
+  .decorated-zone { 
+    min-height: 768px; 
+  }
+
   .header__theme-menu {
     justify-self: center;
     padding-top: 18px;
