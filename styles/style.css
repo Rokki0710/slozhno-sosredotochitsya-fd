@@ -369,8 +369,8 @@
 }
 
 @media (width >= 1024px) {
-  .decorated-zone { 
-    min-height: 768px; 
+  .decorated-zone {
+    min-height: 768px;
   }
 
   .header__theme-menu {
