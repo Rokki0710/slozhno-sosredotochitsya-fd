@@ -370,7 +370,7 @@
 
 @media (width >= 1024px) {
   .decorated-zone {
-    min-height: 768px;
+    min-height: 768px; /*При удаление возникает ошибка в авто тестакх на гитхабе*/
   }
 
   .header__theme-menu {
