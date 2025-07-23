@@ -1,4 +1,3 @@
-/* Переделал весь style.css и немного index.html */
 .page {
   width: 100%;
   margin: 0 auto;
@@ -32,12 +31,6 @@
   overflow-wrap: break-word;
   hyphens: auto;
 }
-/* 
-.decorated-zone {
-  position: relative;
-  height: 100vh;
-  min-height: clamp(668px, 90.585vw + 20.519rem, 64rem);
-} */
 
 .decorated-zone::after,
 .decorated-zone::before {
@@ -68,8 +61,8 @@
 
 .rec {
   position: absolute;
-  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem); /*отступ 10px стал 20px*/
-  right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem); /*отступ 19 стал 29px*/
+  top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem);
   color: var(--decorated-element-color);
   line-height: 25px;
   text-transform: uppercase;
