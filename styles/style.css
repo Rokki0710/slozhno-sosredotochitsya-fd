@@ -1,7 +1,5 @@
+/* Переделал весь style.css и немного index.html */
 .page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   margin: 0 auto;
   background-color: var(--bg-fallback, var(--bg-color));
@@ -35,7 +33,7 @@
 .decorated-zone {
   position: relative;
   height: 100vh;
-  min-height: clamp(668px, 90.585vw + 20.519rem, 64rem);
+  min-height: clamp(768px, 90.585vw + 20.519rem, 64rem);
 }
 
 .decorated-zone::after,
