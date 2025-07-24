@@ -11,11 +11,7 @@
   --button-color-hover: rgba(53, 52, 48, 0.4);
   --decorated-element-color: #353430;
   --paragraph-title-color: #353430;
-}
-
-:root.theme-light .header__decorated-element,
-:root.theme-light .rec {
-  display: none;
+  --rec-display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,10 +28,7 @@
     --button-color-hover: rgba(53, 52, 48, 0.4);
     --decorated-element-color: #353430;
     --paragraph-title-color: #353430;
+    --rec-display: none;
   }
 
-  .header__decorated-element,
-  .rec {
-    display: none;
-  }
 }

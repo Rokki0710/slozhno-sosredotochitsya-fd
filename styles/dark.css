@@ -11,8 +11,5 @@
   --button-color-hover: rgba(255, 0, 112, 0.4);
   --decorated-element-color: #ff0070;
   --paragraph-title-color: #ff0070;
-}
-
-:root.theme-dark .header__decorated-element {
-  display: block;
+  --rec-display: block;
 }

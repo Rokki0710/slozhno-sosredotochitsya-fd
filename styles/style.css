@@ -20,20 +20,23 @@
     1.25rem
   );
   padding-left: 10px;
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .title-decor,
 .card__title,
 .card__paragraph {
-  word-break: break-word;
+  /* word-break: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
+  hyphens: auto; */
 }
 
 .decorated-zone {
-  position: relative;
+  /* position: relative;
   height: 100vh;
-  min-height: 668px;
+  min-height: 668px; */
 }
 
 .decorated-zone::after,
@@ -70,6 +73,7 @@
   color: var(--decorated-element-color);
   line-height: 25px;
   text-transform: uppercase;
+  display: var(--rec-display);
 }
 
 .rec::after {
@@ -87,8 +91,9 @@
 
 .header__theme-menu {
   justify-self: end;
-  padding-top: clamp(4.688rem, 29.771vw - 2.29rem, 12rem);
-  padding-bottom: clamp(4.063rem, 27.481vw - 2.378rem, 10.813rem);
+  margin-block-start: 75px;
+  /* padding-top: clamp(4.688rem, 29.771vw - 2.29rem, 12rem);
+  padding-bottom: clamp(4.063rem, 27.481vw - 2.378rem, 10.813rem); */
 }
 
 .header__theme-menu-list {
@@ -130,7 +135,7 @@
 }
 
 .header__title {
-  padding-bottom: clamp(3.438rem, 27.226vw - 2.944rem, 10.125rem);
+  /* padding-bottom: clamp(3.438rem, 27.226vw - 2.944rem, 10.125rem); */
 }
 
 .primariy-title-decor {
@@ -150,7 +155,7 @@
 
 .header__description {
   justify-self: end;
-  margin-bottom: clamp(4.125rem, 29.771vw - 2.853rem, 11.438rem);
+  /* margin-bottom: clamp(4.125rem, 29.771vw - 2.853rem, 11.438rem); */
   font-weight: bold;
   inline-size: clamp(22.188rem, 2.308vw + 21.642rem, 22.75rem);
   block-size: min-content;
@@ -225,9 +230,13 @@
 }
 
 .card-list {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 20px; */
+}
+
+.card-list__item {
+  margin-bottom: 20px;
 }
 
 .card__link {
@@ -273,6 +282,9 @@
 .footer {
   display: flex;
   align-items: center;
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .footer__title {
@@ -283,6 +295,14 @@
 @media (width >= 768px) {
   .header {
     padding-left: 0px;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 192px;
+  }
+
+  .header__description {
+    margin-block-end: 10px;
   }
 
   .primariy-title-decor {
@@ -371,9 +391,8 @@
 @media (width >= 1024px) {
   .header__theme-menu {
     justify-self: center;
-    padding-top: 18px;
-    padding-bottom: 274px;
-    padding-left: 20px;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
   }
 
   .header__theme-menu-list {
@@ -381,11 +400,16 @@
   }
 
   .header__title {
-    padding-bottom: 114px;
+    /* padding-bottom: 114px; */
+    align-self: center;
+    margin-block-start: 90px;
   }
 
   .header__description {
-    margin-bottom: 134px;
+    /* margin-bottom: 134px; */
+    justify-self: end;
+    align-self: start;
+    margin-block-start: 50px;
   }
 
   .focus-problem,
