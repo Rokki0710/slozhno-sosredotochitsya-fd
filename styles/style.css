@@ -11,32 +11,14 @@
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: start;
-  padding-right: clamp(
-    0.625rem,
-    2.545vw + 0.029rem,
-    1.25rem
-  );
-  padding-left: 10px;
-  position: relative;
   height: 100vh;
   min-height: 668px;
-}
-
-.title-decor,
-.card__title,
-.card__paragraph {
-  /* word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto; */
-}
-
-.decorated-zone {
-  /* position: relative;
-  height: 100vh;
-  min-height: 668px; */
+  padding-right: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding-left: 10px;
 }
 
 .decorated-zone::after,
@@ -56,11 +38,7 @@
 }
 
 .decorated-zone::after {
-  bottom: clamp(
-    0.625rem,
-    2.545vw + 0.029rem,
-    1.25rem
-  );
+  bottom: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   left: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
   border-bottom: 1px solid var(--decorated-element-color);
   border-left: 1px solid var(--decorated-element-color);
@@ -70,10 +48,10 @@
   position: absolute;
   top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem); /*отступ 10px стал 20px*/
   right: clamp(1.188rem, 2.545vw + 0.591rem, 1.813rem); /*отступ 19 стал 29px*/
+  display: var(--rec-display);
   color: var(--decorated-element-color);
   line-height: 25px;
   text-transform: uppercase;
-  display: var(--rec-display);
 }
 
 .rec::after {
@@ -92,8 +70,6 @@
 .header__theme-menu {
   justify-self: end;
   margin-block-start: 75px;
-  /* padding-top: clamp(4.688rem, 29.771vw - 2.29rem, 12rem);
-  padding-bottom: clamp(4.063rem, 27.481vw - 2.378rem, 10.813rem); */
 }
 
 .header__theme-menu-list {
@@ -104,7 +80,6 @@
 
 .header__theme-menu-button {
   min-width: 70px;
-  white-space: nowrap;
   border: none;
   padding: 4px 13px;
   color: var(--button-color);
@@ -113,6 +88,7 @@
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .header__theme-menu-button_active {
@@ -134,10 +110,6 @@
   box-shadow: 0 2px 0 -1px var(--button-color);
 }
 
-.header__title {
-  /* padding-bottom: clamp(3.438rem, 27.226vw - 2.944rem, 10.125rem); */
-}
-
 .primariy-title-decor {
   color: var(--title-color);
   font-weight: bold;
@@ -155,7 +127,6 @@
 
 .header__description {
   justify-self: end;
-  /* margin-bottom: clamp(4.125rem, 29.771vw - 2.853rem, 11.438rem); */
   font-weight: bold;
   inline-size: clamp(22.188rem, 2.308vw + 21.642rem, 22.75rem);
   block-size: min-content;
@@ -163,40 +134,20 @@
 
 .main-content,
 .footer {
-  padding-right: clamp(
-    0.625rem,
-    2.545vw + 0.029rem,
-    1.25rem
-  );
-  padding-left: clamp(
-    0.625rem,
-    2.545vw + 0.029rem,
-    1.25rem
-  );
+  padding-right: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding-left: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
 }
 
 .main-content {
-  padding-top: clamp(
-    2.5rem,
-    5.089vw + 1.307rem,
-    3.75rem
-  );
+  padding-top: clamp(2.5rem, 5.089vw + 1.307rem, 3.75rem);
 }
 
 .section {
-  margin-bottom: clamp(
-    3.125rem,
-    7.634vw + 1.336rem,
-    5rem
-  );
+  margin-block-end: 50px;
 }
 
 .section:last-of-type {
-  margin-bottom: clamp(
-    2.5rem,
-    5.089vw + 1.307rem,
-    3.75rem
-  );
+  margin-bottom: clamp(2.5rem, 5.089vw + 1.307rem, 3.75rem);
 }
 
 .section__title {
@@ -207,10 +158,23 @@
   line-height: 23.4px;
 }
 
+.focus-advices {
+  margin-block-end: 30px;
+}
+
 .focus-advices__paragraph {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.focus-distractors {
+  display: grid;
+  gap: 20px;
+}
+
+.focus-distractors .section__title {
+  padding: 0;
 }
 
 .card__title {
@@ -227,12 +191,6 @@
 
 .card__paragraph:not(:last-of-type) {
   margin-bottom: 10px;
-}
-
-.card-list {
-  /* display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px; */
 }
 
 .card-list__item {
@@ -258,31 +216,23 @@
 .focus-pictures_picture-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(
-    0.625rem,
-    2.545vw + 0.029rem,
-    1.25rem
-  );
-  padding-top: clamp(
-    0.625rem,
-    2.545vw + 0.029rem,
-    1.25rem
-  );
+  gap: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
+  padding-top: clamp(0.625rem, 2.545vw + 0.029rem, 1.25rem);
 }
 
 .focus-pictures_image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
 }
 
 .footer {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   height: 100vh;
   min-height: 668px;
 }
@@ -313,6 +263,10 @@
     inline-size: clamp(22.75rem, 49.609vw - 1.063rem, 30.688rem);
   }
 
+  .section {
+    margin-block-end: 60px;
+  }
+
   .focus-problem,
   .focus-advices {
     display: grid;
@@ -331,17 +285,20 @@
   .focus-distractors {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-block-end: 80px;
   }
 
   .focus-distractors .section__title {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1/-1;
+    max-width: 30%;
+    padding: 0;
   }
 
-  .focus-distractors .card-list {
-    grid-row: 2;
-    grid-column-start: span 4;
-    grid-column-end: auto;
+  .focus-distractors .card {
+    grid-column: 1/5;
+    grid-row-start: auto;
   }
 
   .focus-advices .section__title {
@@ -391,8 +348,8 @@
 @media (width >= 1024px) {
   .header__theme-menu {
     justify-self: center;
-    margin-block-start: 20px;
     margin-inline-start: 20px;
+    margin-block-start: 20px;
   }
 
   .header__theme-menu-list {
@@ -400,13 +357,11 @@
   }
 
   .header__title {
-    /* padding-bottom: 114px; */
     align-self: center;
     margin-block-start: 90px;
   }
 
   .header__description {
-    /* margin-bottom: 134px; */
     justify-self: end;
     align-self: start;
     margin-block-start: 50px;
@@ -419,16 +374,19 @@
 
   .focus-distractors {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(auto, 1fr);
+    gap: 20px;
+    margin-block-end: 80px;
   }
 
   .focus-distractors .section__title {
-    align-self: start;
+    grid-column: 1/-1;
+    max-width: 30%;
+    padding: 0;
   }
 
-  .focus-distractors .card-list {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: row;
-    grid-column-start: span 3;
+  .focus-distractors .card {
+    grid-column: auto;
+    grid-row-start: auto;
   }
 }
