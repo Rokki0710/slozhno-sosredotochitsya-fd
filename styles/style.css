@@ -253,14 +253,11 @@
 
   .header__description {
     margin-block-end: 10px;
+    inline-size: clamp(22.75rem, 49.609vw - 1.063rem, 30.688rem);
   }
 
   .primariy-title-decor {
     font-size: clamp(7.5rem, 14.453vw + 0.563rem, 9.813rem);
-  }
-
-  .header__description {
-    inline-size: clamp(22.75rem, 49.609vw - 1.063rem, 30.688rem);
   }
 
   .section {
